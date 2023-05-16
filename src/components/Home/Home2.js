@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -19,27 +15,30 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm a a full-stack developer with a passion for coding and a
+              strong enthusiasm for web technologies.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              With expertise in
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple"> JavaScript, TypeScript and Python, </b>
               </i>
+              I bring a versatile skill set to the table. Throughout my career,
+              I have dedicated myself to crafting high-quality and efficient web
+              solutions. I am experienced in developing robust, scalable, and
+              user-friendly applications, employing the latest frameworks and
+              tools to deliver exceptional results.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
+              Whether it's front-end development, back-end systems, or the
+              entire software stack, I strive to create seamless experiences
+              that meet the needs of both clients and end-users. My journey in
+              the world of web development began with a deep curiosity about how
+              technology shapes our online experiences.
               <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              <br />I am constantly seeking to stay updated with the latest
+              industry trends, tools, and best practices. This commitment allows
+              me to deliver modern and cutting-edge solutions, working with
               <i>
                 <b className="purple">
                   {" "}
@@ -48,8 +47,17 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React, Next.js and Node.js</b>
               </i>
+              <br />
+              <br />
+              Aside from coding, I also enjoy sharing my knowledge and
+              experiences with others. I actively participate in tech
+              communities, attend conferences, and contribute to open-source
+              projects. By engaging with fellow developers, I continuously learn
+              and grow, all while giving back to the vibrant developer
+              community.
+              <br />
             </p>
           </Col>
           <Col md={4} className="myAvtar">

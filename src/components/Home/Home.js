@@ -1,20 +1,21 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   return (
-    <section>
+    <div>
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                Greetings!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
@@ -26,8 +27,18 @@ function Home() {
                 <strong className="main-name"> UMER NASIR</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 20, paddingLeft: 45, textAlign: "left" }}>
                 <Type />
+              </div>
+
+              <div style={{ padding: 20, paddingLeft: 45, textAlign: "left" }}>
+                <Button
+                  variant="primary"
+                  href={"/resume"}
+                  style={{ maxWidth: "300px" }}
+                >
+                  &nbsp;View Resume
+                </Button>
               </div>
             </Col>
 
@@ -36,14 +47,16 @@ function Home() {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{ maxHeight: "550px" }}
               />
             </Col>
           </Row>
         </Container>
+        <Particle />
       </Container>
+
       <Home2 />
-    </section>
+    </div>
   );
 }
 
